@@ -1,0 +1,163 @@
+.contents {
+  display: grid;
+  margin-bottom: 8rem;
+}
+
+.deal {
+  margin-bottom: 18rem;
+}
+
+.aboutImage,
+.worldClassImage,
+.dealImage {
+  width: 100%;
+  height: 300px;
+}
+
+.aboutImage {
+  background-image: url(../../assets/about/mobile/image-about-hero.jpg);
+  background-size: cover;
+}
+
+.worldClassImage {
+  background-image: url(../../assets/about/mobile/image-world-class-talent.jpg);
+  background-size: cover;
+}
+
+.dealImage {
+  background-image: url(../../assets/about/mobile/image-real-deal.jpg);
+  background-size: cover;
+}
+
+.aboutContent,
+.worldClassContent,
+.dealContent {
+  padding: 3rem 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.aboutContent {
+  background-image: url(../../assets/about/bg-pattern-hero-about-desktop.svg);
+  background-color: #e7816b;
+  color: #fff;
+}
+
+.worldClassContent,
+.dealContent {
+  background-image: url(../../assets/bg-pattern-call-to-action.svg);
+  background-repeat: repeat;
+  background-color: #fdf3f0;
+}
+
+.worldClassContent h1,
+.dealContent h1 {
+  color: #e7816b;
+}
+
+@media screen and (min-width: 500px) {
+  .aboutImage,
+  .worldClassImage,
+  .dealImage {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutImage,
+  .worldClassImage,
+  .dealImage {
+    height: 300px;
+  }
+
+  .aboutImage {
+    background-image: url(../../assets/about/tablet/image-about-hero.jpg);
+  }
+
+  .worldClassImage {
+    background-image: url(../../assets/about/tablet/image-world-class-talent.jpg);
+  }
+
+  .dealImage {
+    background-image: url(../../assets/about/tablet/image-real-deal.jpg);
+  }
+
+  .contents {
+    gap: 8rem;
+  }
+
+  .about,
+  .worldClass,
+  .deal {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .deal {
+    margin-bottom: 18rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .aboutImage {
+    background-image: url(../../assets/about/desktop/image-about-hero.jpg);
+  }
+
+  .worldClassImage {
+    background-image: url(../../assets/about/desktop/image-world-class-talent.jpg);
+  }
+
+  .dealImage {
+    background-image: url(../../assets/about/desktop/image-real-deal.jpg);
+  }
+
+  .about,
+  .worldClass,
+  .deal {
+    width: 75%;
+  }
+
+  .aboutImage {
+    height: 500px;
+  }
+
+  .worldClassImage,
+  .dealImage {
+    height: 700px;
+  }
+
+  .about,
+  .worldClass,
+  .deal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aboutContent,
+  .dealContent {
+    grid-row: 1;
+  }
+
+  .aboutContent,
+  .worldClassContent,
+  .dealContent {
+    text-align: left;
+    padding: 3rem 5rem;
+  }
+
+  .aboutContent h1,
+  .worldClassContent h1,
+  .dealContent h1 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  .deal {
+    margin-bottom: 18rem;
+  }
+}

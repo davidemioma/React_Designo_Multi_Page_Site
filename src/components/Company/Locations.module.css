@@ -1,0 +1,30 @@
+.locations {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.location {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.location h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.location button {
+  background-color: #e7816b;
+  color: #fff;
+}
+
+@media screen and (min-width: 1280px) {
+  .locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

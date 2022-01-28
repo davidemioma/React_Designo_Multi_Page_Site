@@ -1,0 +1,39 @@
+.nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo {
+  width: 220px;
+  height: 30px;
+}
+
+.navList {
+  display: none;
+  list-style: none;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navList li a:hover,
+.navList li a.active {
+  color: #e7766b;
+}
+
+@media screen and (min-width: 768px) {
+  .navToggler {
+    display: none;
+  }
+
+  .navList {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}

@@ -1,0 +1,106 @@
+.locations {
+  display: grid;
+  gap: 2.5rem;
+  margin-bottom: 18rem;
+}
+
+.canada,
+.australia,
+.uk {
+  display: grid;
+  width: 100%;
+}
+
+.content {
+  background-image: url(../../assets/bg-pattern-two-circles.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #fdf3f0;
+  padding: 3rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content h1 {
+  text-transform: capitalize;
+  color: #e7816b;
+}
+
+.imageCanada,
+.imageAustralia,
+.imageUk {
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imageCanada {
+  background-image: url(../../assets/locations/tablet/image-map-canada.png);
+}
+
+.imageAustralia {
+  background-image: url(../../assets/locations/tablet/image-map-australia.png);
+}
+
+.imageUk {
+  background-image: url(../../assets/locations/tablet/image-map-uk.png);
+}
+
+@media screen and (min-width: 768px) {
+  .canada,
+  .australia,
+  .uk {
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .imageCanada,
+  .imageAustralia,
+  .imageUk,
+  .content {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .content {
+    justify-items: start;
+    text-align: left;
+  }
+
+  .info {
+    display: flex;
+    gap: 7rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .canada,
+  .australia,
+  .uk {
+    width: 75%;
+  }
+
+  .canada .content,
+  .uk .content {
+    grid-row: 1;
+  }
+
+  .imageCanada,
+  .imageUk,
+  .imageAustralia {
+    height: 330px;
+  }
+
+  .canada,
+  .uk {
+    grid-template-columns: 70% 30%;
+  }
+
+  .australia {
+    grid-template-columns: 30% 70%;
+  }
+}

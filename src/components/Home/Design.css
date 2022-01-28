@@ -1,0 +1,94 @@
+.designs {
+  margin-bottom: 8rem;
+}
+
+.designs,
+.design {
+  display: grid;
+  gap: 2rem;
+}
+
+.web,
+.app,
+.graphic {
+  border-radius: 1.5rem;
+  padding: 3rem 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+.web {
+  background-image: url(../../assets/home/mobile/image-web-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app {
+  background-image: url(../../assets/home/mobile/image-app-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.graphic {
+  background-image: url(../../assets/home/mobile/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.web:hover,
+.app:hover,
+.graphic:hover {
+  transform: scale(1.1);
+}
+
+.web h1,
+.app h1,
+.graphic h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.web button,
+.app button,
+.graphic button {
+  background: none;
+  font-size: 1rem;
+  color: #fff;
+  display: inline-flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .web {
+    background-image: url(../../assets/home/tablet/image-web-design.jpg);
+  }
+
+  .app {
+    background-image: url(../../assets/home/tablet/image-app-design.jpg);
+  }
+
+  .graphic {
+    background-image: url(../../assets/home/tablet/image-graphic-design.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .designs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .web {
+    background-image: url(../../assets/home/desktop/image-web-design-large.jpg);
+  }
+
+  .app {
+    background-image: url(../../assets/home/desktop/image-app-design.jpg);
+  }
+
+  .graphic {
+    background-image: url(../../assets/home/desktop/image-graphic-design.jpg);
+  }
+}

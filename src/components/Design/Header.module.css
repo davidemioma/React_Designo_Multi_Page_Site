@@ -1,0 +1,39 @@
+.header {
+  background-image: url(../../assets/bg-pattern-call-to-action.svg);
+  background-color: #e7816b;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6rem;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.header p {
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 4rem;
+    margin-bottom: 7rem;
+  }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    width: 75%;
+    margin-bottom: 7rem;
+  }
+}

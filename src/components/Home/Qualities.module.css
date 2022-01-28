@@ -1,0 +1,47 @@
+.quality {
+  display: grid;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.quality span {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.circle {
+  width: 240px;
+}
+
+.qualityImg {
+  position: absolute;
+}
+
+.qualities {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 16rem;
+}
+
+.content p {
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .quality {
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .qualities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quality {
+    grid-template-columns: none;
+    text-align: center;
+  }
+}

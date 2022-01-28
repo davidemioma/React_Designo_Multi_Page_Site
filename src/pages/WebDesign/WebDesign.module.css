@@ -1,0 +1,25 @@
+.designs {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+
+.views {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 17rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .designs {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 7rem;
+  }
+
+  .views {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 17rem;
+  }
+}
